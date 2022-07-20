@@ -1,0 +1,8 @@
+Vehicle, Speed, Time 
+Train,20,3
+Scooter,3,2
+Moped, 16, 1
+Truck 40, 4
+F1, 212, 2
+Motorcycle, 12, 4 
+Bike, 3, 4
