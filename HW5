@@ -9,13 +9,13 @@ public class HW5 {
         String inFileName = "train.txt"; //Input file 
 
         try {
-            Scanner sc = new Scanner(new File(inFileName));
+            Scanner sc = new Scanner(new File(inFileName)); // 
 
             sc.nextLine();
 
             while (sc.hasNextLine()) { // Scan through the lines
-                // split line by comma delimeter
-                String[] info = sc.nextLine().split(",");
+   
+                String[] info = sc.nextLine().split(","); // split line using a comma
 
                 String fileName = info[0];
                 int speed = Integer.parseInt(info[1]);
@@ -42,7 +42,7 @@ public class HW5 {
 
             PrintWriter fw = new PrintWriter(new File(fileName));
 
-            int dist;
+            int dista;
 
             fw.write(String.format("%4s%30s\r\n",
                     "Hour", "Distance Traveled"));
@@ -51,9 +51,9 @@ public class HW5 {
 
             for (int hr = 1; hr <= time; hr++) {
 
-                dist = distance(speed, hr);
+                dista = distance(speed, hr);
 
-                fw.write(String.format("%4d%20d\r\n", hr, dist));
+                fw.write(String.format("%4d%20d\r\n", hr, dista));
             }
 
             fw.close(); // close the file
